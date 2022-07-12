@@ -1,0 +1,25 @@
+include head
+div(class="container")
+	div(class="row justify-content-center")
+		//img(class="ghjjj" src='images/eye.png')
+		div(class="col-md-6")
+			form#regist-shop(action="")
+				div(class="mb-3")
+					label(for="reg-Name" class="form-label") name
+					input(type="text" class="form-control" name="reg_name" id="reg_Name" aria-describedby="nameHelp")
+				div(class="mb-3")
+					label(for="reg-Email" class="form-label") email
+					input(type="text" class="form-control" name="reg_email" id="reg_Email" aria-describedby="emailHelp")
+				div(class="mb-3")
+					label(for="reg-pwd" class="form-label") password
+					input(type="password" class="form-control" name="reg_pwd" id="reg_pwd")
+				div(class="mb-3 my_pwd")
+					label(for="reg-cpwd" class="form-label") password
+					input(type="password" class="form-control" name="reg_cpwd" id="reg_cpwd")
+					a(href="" class="password-control")
+				button(type="submit" id="regist-shop2" class="btn btn-primary") отправить
+				a(class="btn btn-secondary" href="/" role="button" aria-current="page") Home
+				a(class="btn btn-secondary" href="/rest_psw" role="button" aria-current="page") Востановить пароль
+include footer_foRegist.pug
+script(src='js/regist.js')
+				

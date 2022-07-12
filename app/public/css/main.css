@@ -1,0 +1,226 @@
+header{
+    position: relative;
+    /*border: 3px solid red;*/
+}
+/*================для img Рюмка===========*/
+section.sectionWone{
+background-color: #000000;  
+}
+section>img{
+/*background-size: 80%;*/
+max-width: 100%;
+height: auto;
+animation-name: rumka;
+animation-duration: 15s;
+/*animation-iteration-count: infinite;*/
+animation-fill-mode: forwards;
+/*transform: rotate(-40deg)*/
+}
+@-moz-keyframes rumka{
+from{
+    -moz-transform: scale(1);
+}to{
+    -moz-transform: scale(0.9);
+}
+
+
+.fixed-top{
+  /*opacity: 0.5;*/
+  background-color: #000000;
+}
+/*body{
+	border:2px dashed red;
+}
+#kkk{
+	color: green;
+}
+h2{
+	color: red;
+}
+img{
+display:block;
+}*/
+li{
+list-style-type: none;
+}
+.card-footer{
+	padding-top: 0.1rem;
+}
+
+.bg-dark {
+    background-color: #212529 !important;
+}
+.ggg{
+	padding-top: 5%;
+}
+.navbar{
+	padding-bottom: 0;
+	margin-bottom: 5%;
+}
+.haier{
+	height: 10%;
+}
+.offcanvas.show{
+	display: inline-block;св
+	top:9%;
+}
+#cart-nav{
+	/*margin-top: 14%;*/
+}
+@media (max-width: 1000px) {
+  .ggg{
+    padding-top: 6%;
+  }
+}
+@media (max-width: 800px) {
+  .ggg{
+    padding-top: 8%;
+  }
+}
+@media (max-width: 520px) {
+  .ggg{
+    padding-top: 9%;
+  }
+}
+@media (max-width:440px) {
+  .ggg{
+    padding-top: 16%;
+  }
+}
+#offcanvasExample,#offcanvasRight{
+	border-radius: 10px;
+	/*background: #DAE8F2;*/
+	background-color: rgba(83,83,92,.9);
+}
+.offcanvas-title{
+
+}
+.offcanvas-body{
+	padding: 0;
+}
+a.list-group-item:hover {
+    background-color: #232327;
+    color: #fff;
+}
+h5#offcanvasExampleLabel{
+text-shadow: #A6B9E6 1px 0 10px;
+margin: 0 auto;
+font-size: 2rem;
+color: #FFFFFF;
+}
+.offcanvas-body{
+	overflow: hidden;
+	/*height: 100%;*/
+}
+ul.category-list{
+	height: 50px;
+	display: inline-block;
+}
+.btn-primary{
+	margin-right: 15px;
+}
+/*regist.pug*/
+.my_pwd{
+position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 27px;
+	right: -9px;
+	display: inline-block;
+	width: 53px;
+	height: 44px;
+	background: url(images/eye.png) 0 0 no-repeat;
+}
+.goods{
+	margin-top: 8%;
+}
+.oplata, .punkt{
+	border: 1px solid #00D3A9;
+	/*height: 100px;*/
+}
+#ord_1{
+	/*padding-top:10%;*/
+	font-size: 2em;
+}
+
+/*.wrap{
+	background: #fff;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.text-center{
+	text-align: center;
+}
+.content{
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+.site-header{
+	height: auto;
+	padding: 20px 0;
+}
+.site-header h1{
+	display: inline-block;
+}
+.full-width{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}*/
+/*  =================card===============*/
+/*.card{
+	border: 1px solid #dedede;
+	text-align: center;
+}*/
+/*.card-images{
+	display: block;
+	margin: 20px auto;
+	max-width: 90%;
+	min-height: 150px;
+}*/
+/*>>>>>>>>>>>>>>>>>>>>  nav>>>>>>>>>>>>>>>>>*/
+
+/*.site-nav{
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+*/
+  /*left: -300px;*/
+/*  top: 0;
+  z-index: 999999;
+  padding: 10px;
+  transition: all ease 1s;
+  color: #fff;
+}
+.close-button-div {
+  text-align: right;
+}*/
+
+/*.show-nav {
+  position: relative;
+}
+
+ul.category-list {
+  list-style-type: disc;
+}
+
+ul.category-list a {
+  color: #424242;
+}
+.site-nav a {
+  color: #424242;
+}
+.cons {
+	margin-right: 5px;
+}
+#posicion2{
+	position: fixed;*/
+	/*position: sticky;*/
+	/*top: 0;
+}
+*/

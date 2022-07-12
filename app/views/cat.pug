@@ -1,0 +1,21 @@
+include head
+
+header(class='site-header')
+  include site_header3.pug
+main
+  div(class='container ggg')
+    div(class='row')
+      div(class='col-sm-12 col-md-12 col-lg-12')
+        h2 #{catR[0]['category']}
+      each val, index in goods
+        include card_2.pug
+
+      div #{catR[0]['description']}
+
+include navTo.pug
+include navToRight.pug                      
+include footer_2.pug
+
+
+
+	

@@ -1,0 +1,62 @@
+include head
+
+div(class='wrap')
+  div(class='content')
+    header(class='site-header')
+      include site_header_order.pug
+
+    div(class='container')
+      div(class='row')
+        div(class='col col-md-12')
+          h3(class="cart-header") Cart
+          //загружает из card.js
+          div(id='cart-nav')
+        div(class='col col-md-12')
+          h3 Create order 
+        div(class='col col-md-6')
+          form#lite-shop-order(action="")
+                  div(class='form-control')
+                    label(for='username') Name
+                    input(
+                        type='text',
+                        id='username',
+                        placeholder='Enter your name',
+                        value='Sergey',
+                        )
+                  div(class='form-control')
+                    label(for='phone') Phone
+                    input(
+                        type='text',
+                        id='phone',
+                        placeholder='+380505555555',
+                        value='+755656566',
+                        )
+                  div(class='form-control')
+                    label(for='email') Email
+                    input(
+                        type='text',
+                        id='email',
+                        placeholder='mail@example.com',
+                        value='sleto@mail.ru',
+                        )
+                  div(class='form-control')
+                    label(for='address') Address
+                    textarea(
+                        id='address',
+                        placeholder='where are you',
+                        )
+                  div(class='form-control')
+                    label(for='rule') 
+                      input(
+                          type='checkbox',
+                          id='rule',
+                          value='1'
+                          ) 
+                      span  Terms and Conditions
+                  div(class='form-control text-right')
+                    button(class='button-primary', type='submit') Finish order
+    //include nav.pug
+
+  include footer_2.pug
+  script(src='js/order.js')
+

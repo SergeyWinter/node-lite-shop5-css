@@ -1,0 +1,20 @@
+
+nav(class="navbar navbar-expand-md bg-dark fixed-top")
+	div(class="container-fluid")
+		//a(class="navbar-brand" href="#") Carousel
+		a(class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample") Каталог
+		button(class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 	aria-label="Toggle navigation")
+			span(class="navbar-toggler-icon")
+		div(id="navbarCollapse" class="collapse navbar-collapse")
+			ul(class="navbar-nav me-auto mb-2 mb-md-0")
+				li(class="nav-item")
+					a(class="nav-link active" aria-current="page" href="/") Home
+					a(class="nav-link active" aria-current="page" href="/using_page") Личный кабинет
+			a(class="btn btn-primary" href="/login_user" role="button") войти
+			form(class="d-flex")
+				input(class="form-control me-2" type="search" placeholder="Search" aria-label="Search")
+				button(class="btn btn-outline-success" type="submit") Search
+				//button(class='btn btn-primary' type="button") войти
+			button(class='btn btn-primary' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight") Корзина
+
+

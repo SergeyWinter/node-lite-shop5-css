@@ -1,0 +1,10 @@
+a(class="btn btn-secondary" href="/" role="button" aria-current="page") Home
+h1 Restore password
+form(action="/rest_psw", method="POST")
+  div(class="mb-3")
+    label(class="form-label") Email
+    input(name="email", id="mail")
+  div(class="mb-3")
+    label(class="form-label") New password
+    input(type="password", name="password" id="password")
+  button(class='btn btn-primary' type="submit") Отправить

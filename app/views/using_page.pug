@@ -1,0 +1,37 @@
+include head
+a(class="nav-link active" aria-current="page" href="/") Home
+h1 Using Page
+table
+ tr
+  th User-name
+  th User-email
+ each val, index in use2
+  tr
+   td #{val['user_name']}
+   td #{val['user_email']}
+h2 Мои заказы
+table
+ tr
+  th id
+  th userId
+  th Goods_id
+  th Goods_price
+  th Количество
+  th Сумма
+ each val, index in use1
+  tr
+   td #{val['id']}
+   td #{val['user_id']}
+   td #{val['goods_id']}
+   td #{val['goods_price']}
+   td #{val['goods_amount']}
+   td #{val['total']} rub
+script(src="js/using_page.js")
+
+
+
+
+
+
+
+

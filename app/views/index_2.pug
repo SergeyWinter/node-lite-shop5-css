@@ -1,0 +1,25 @@
+include head
+
+header(class='fixed-top')
+  //include site_header
+  include site_header3.pug
+section(class='sectionWone')
+ img(src='images/cigarsFont.jpg')
+main
+  div(class='container ggg')
+    div(class='row')
+      //div(id="category-list")
+      each val2, index2 in catR
+        div(class="col-sm-12 col-md-12 col-lg-12")
+          h2
+            a(
+              href='/cat?id='+val2['id']
+              ) #{val2['category']}
+                
+        each val, index in goods
+          if val2['id'] == val['category']
+            include card_2.pug
+  include navTo.pug 
+  include navToRight.pug                      
+  include footer_2.pug       
+    
