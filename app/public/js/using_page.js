@@ -1,5 +1,10 @@
 // console.log("работает using_page.js");
-// console.log(localStorage);
+console.log(localStorage.getItem('cart'));
+if (localStorage.getItem('cart')){
+  cart = JSON.parse(localStorage.getItem('cart'));
+  // console.log(cart);
+  ajaxGetFousingPage();
+}
 // function gitscart(){
 // 	fetch('/using_page',{
 // 		method:'POST',
