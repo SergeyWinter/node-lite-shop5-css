@@ -1,4 +1,4 @@
-console.log('работает кардюж-card.js');
+console.log('работает кардюж-card22.js');
 let cart = {};
 let myCookie=document.cookie;
 // console.log(myCookie);
