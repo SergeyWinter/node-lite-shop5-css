@@ -3,7 +3,7 @@ console.log(localStorage.getItem('cart'));
 if (localStorage.getItem('cart')){
   cart = JSON.parse(localStorage.getItem('cart'));
   // console.log(cart);
-  ajaxGetFousingPage();
+  //ajaxGetFousingPage();
 }
 // function gitscart(){
 // 	fetch('/using_page',{
