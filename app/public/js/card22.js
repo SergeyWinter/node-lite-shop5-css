@@ -19,8 +19,10 @@ fetch('/get-pers',{
 }
 getPersonaly();
 function showPerson(body){
-let bhj=document.getElementById('myBody');
-bhj.childNodes[0].nodeValue=body[0]['name'];
+let bbbn=document.getElementById('myBody');
+bbbn.innerHTML=body[0]['name'];
+// console.log(bbbn);
+// bhj.childNodes[0].nodeValue=body[0]['name'];
 }
 // let bhj=document.getElementById('myBody');
 // bhj.childNodes[0].nodeValue=myCookie;
