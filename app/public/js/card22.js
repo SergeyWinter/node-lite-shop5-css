@@ -137,6 +137,26 @@ function updateLocalStorageCart(){
 function formatPrice(price) {
   return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ');
 }
+///-------------скидки ------------------------
+function skidon(data){
+  let out = '<table class="table table-striped table-cart"><tbody>';
+let total = 0;
+// cart берется из 19 строки функции addToCart
+  for (let key in cart){
+    // console.log(data[key]['cost']);
+  // out +=`<tr><td colspan="4"><a href="/goods?id=${key}">${data[key]['name']}</a></td></tr>`;
+  // out += `<tr><td><i class="far fa-minus-square cart-minus" data-goods_id="${key}">-</i></td>`;
+  // // cart[key]-количество
+  // out += `<td>${cart[key]}</td>`;
+  // out += `<td><i class="far fa-plus-square cart-plus" data-goods_id="${key}">+</i></td>`;
+  // out +=`<td>${data[key]['cost']*cart[key] } rub </td>`
+  // out +=`</tr>`
+  total += cart[key]*data[key]['cost'];
+}
+  out += `<tr><td colspan="3">Total2: </td><td>${formatPrice(total)} rub</td></tr>`;
+  out += '</tbody></table>';
+  document.querySelector('#cart-nav2').innerHTML = out;
+}
 
 
 
