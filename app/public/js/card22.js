@@ -74,6 +74,7 @@ function ajaxGetGoodsInfo(){
 		// console.log(JSON.parse(body));
     // console.log(body);
     showCart(JSON.parse(body));
+    skidon(JSON.parse(body));
 	})
 }
 // Data-то что влетело в body
