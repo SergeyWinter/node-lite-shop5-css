@@ -140,8 +140,8 @@ function formatPrice(price) {
 }
 ///-------------скидки ------------------------
 function skidon(data){
-  let out = '<table class="table table-striped table-cart"><tbody>';
-let total = 0;
+  let out2 = '<table class="table table-striped table-cart"><tbody>';
+let total2 = 0;
 // cart берется из 19 строки функции addToCart
   for (let key in cart){
     // console.log(data[key]['cost']);
@@ -152,11 +152,19 @@ let total = 0;
   // out += `<td><i class="far fa-plus-square cart-plus" data-goods_id="${key}">+</i></td>`;
   // out +=`<td>${data[key]['cost']*cart[key] } rub </td>`
   // out +=`</tr>`
-  total += cart[key]*data[key]['cost'];
+  total2 += cart[key]*data[key]['cost'];
+  if (total2>3000) {
+   total2=(total2*0.2);
+  }else if (total2>10000 && total2<18000) {
+total2=(total2*0.4);
+  }else{
+    total2=(total2*0.6);
+  }
+  total2 += total2;
 }
-  out += `<tr><td colspan="3">Total2: </td><td>${formatPrice(total)} rub</td></tr>`;
-  out += '</tbody></table>';
-  document.querySelector('#cart-nav2').innerHTML = out;
+  out2 += `<tr><td colspan="3">Total2: </td><td>${formatPrice(total2)} rub</td></tr>`;
+  out2 += '</tbody></table>';
+  document.querySelector('#cart-nav2').innerHTML = out2;
 }
 
 
