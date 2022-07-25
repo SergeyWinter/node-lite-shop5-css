@@ -74,7 +74,7 @@ function ajaxGetGoodsInfo(){
 		// console.log(JSON.parse(body));
     // console.log(body);
     showCart(JSON.parse(body));
-    skidon(JSON.parse(body));
+    skidon2(JSON.parse(body));
 	})
 }
 // Data-то что влетело в body
@@ -153,18 +153,36 @@ let total2 = 0;
   // out +=`<td>${data[key]['cost']*cart[key] } rub </td>`
   // out +=`</tr>`
   total2 += cart[key]*data[key]['cost'];
-  if (total2>3000) {
-   total2=(total2*0.2);
-  }else if (total2>10000 && total2<18000) {
-total2=(total2*0.4);
-  }else{
-    total2=(total2*0.6);
-  }
+  if (total2>3000&&total2<10000) {
+   total2=(total2*0.6);}
+  if (total2>10000&&total2<18000) {
+  total2=(total2*0.2);}
+  if (total2>18000){
+    total2=(total2*0.3);}
   total2 += total2;
 }
   out2 += `<tr><td colspan="3">Total2: </td><td>${formatPrice(total2)} rub</td></tr>`;
   out2 += '</tbody></table>';
   document.querySelector('#cart-nav2').innerHTML = out2;
+}
+function skidon2(data){
+  let out22 = '<table class="table table-striped table-cart"><tbody>';let total22 = 0;
+  for (let key in cart){
+  total22 += cart[key]*data[key]['cost'];
+}
+ if (total22<7000)
+total22=total22;
+else if(total22>7000&&total22<20000){
+var pr=total22*0.03;      
+total22=total22-pr;
+ }
+else{
+var pr=total22*0.1;
+total22=total22-pr;
+ }
+  out22 += `<tr><td colspan="3">Total22: </td><td>${formatPrice(total22)} rub</td></tr>`;
+  out22 += '</tbody></table>';
+  document.querySelector('#cart-nav2').innerHTML = out22;
 }
 
 
