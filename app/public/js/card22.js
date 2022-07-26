@@ -180,7 +180,7 @@ else{
 var pr=total22*0.1;
 total22=total22-pr;
  }
-  out22 += `<tr><td colspan="3">Total22: </td><td>${formatPrice(total22)} rub</td></tr>`;
+  out22 += `<tr><td colspan="3">ИТОГО: </td><td>${formatPrice(total22)} rub</td></tr>`;
   out22 += '</tbody></table>';
   document.querySelector('#cart-nav2').innerHTML = out22;
 }
