@@ -17,10 +17,14 @@ fetch('/get-pers',{
     // console.log(lklkg[0]['name']);
   })
 }
+// console.log(formserg.defaultValue);
 getPersonaly();
 function showPerson(body){
+let formserg=document.getElementById('username');
 let bbbn=document.getElementById('myBody');
 bbbn.innerHTML=body[0]['name'];
+formserg.defaultValue=body[0]['name'];
+
 // console.log(bbbn);
 // bhj.childNodes[0].nodeValue=body[0]['name'];
 }
@@ -103,9 +107,7 @@ let total = 0;
   	element.onclick = cartPlus;
   })
 }
-// start showCart2//////////////////////////
 
-// end  showCart2///////////////////////////
 function cartPlus() {
   let goodsId = this.dataset.goods_id;
   cart[goodsId]++;
@@ -158,6 +160,13 @@ total22=total22-pr;
   out22 += `<tr><td colspan="3">ИТОГО: </td><td>${formatPrice(total22)} rub</td></tr>`;
   out22 += '</tbody></table>';
   document.querySelector('#cart-nav2').innerHTML = out22;
+}
+
+document.querySelector('#lite-shop-order').onsubmit = function (event) {
+  // останавливает перезагрузку по нажатию submit
+event.preventDefault();
+let username = document.querySelector('#username').value.trim();
+console.log(username);
 }
 
 

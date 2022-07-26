@@ -135,6 +135,12 @@ function updateLocalStorageCart(){
 function formatPrice(price) {
   return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ');
 }
+document.querySelector('#lite-shop-order').onsubmit = function (event) {
+  // останавливает перезагрузку по нажатию submit
+event.preventDefault();
+let username = document.querySelector('#username').value.trim();
+console.log(username);
 
+}
 
 

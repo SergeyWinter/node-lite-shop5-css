@@ -31,6 +31,29 @@ div(class='wrap')
            div(class='row')
             div(class='col-md-6') 
             div(id='ord_4' class='col-md-6') 12345678
+    div(class='container')
+      div(class='row')
+        div(class='col-md-8') первая колонка
+          form#lite-shop-order(action="")
+                  div(class='form-control')
+                    label(for='username') Name
+                    input(
+                        type='text',
+                        id='username',
+                        placeholder='Enter your name',
+                        value='Sergey',
+                        )
+                  div(class='form-control')
+                    label(for='rule') 
+                    input(
+                        type='checkbox',
+                        id='rule',
+                        value='1'
+                        ) 
+                    span  Terms and Conditions
+                  div(class='form-control text-right')
+                    button(class='button-primary', type='submit') Finish order  
+        div(class='col-md-4') вторая колнка               
     //include nav.pug
 
   include footer_22.pug
