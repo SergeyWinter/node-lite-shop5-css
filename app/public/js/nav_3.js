@@ -44,3 +44,4 @@ document.querySelector('#category-list').innerHTML = out;
 
 
 getCategoryList();
+
