@@ -1,6 +1,7 @@
 header{
     position: relative;
-    /*border: 3px solid red;*/
+    border: 3px solid red;
+    max-height: 100%;
 }
 /*================для img Рюмка===========*/
 section.sectionWone{
@@ -113,6 +114,9 @@ position: relative;
 #ord_1{
 	/*padding-top:10%;*/
 	font-size: 2em;
+}
+.navbar{
+	margin-bottom: 0;
 }
 section>img{
 /*background-size: 80%;*/
