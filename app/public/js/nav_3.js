@@ -45,3 +45,17 @@ document.querySelector('#category-list').innerHTML = out;
 
 getCategoryList();
 
+let MyHeaderTop = $('.navbar').offset().top;
+$(window).scroll(function(){
+	let jhj = $(window).scrollTop();
+  // console.log(jhj);
+  // console.log(MyHeaderTop);
+	let two = $('.navbar');
+	if (jhj>=MyHeaderTop) {
+		two.addClass('fixed-top');
+	}else{
+		two.removeClass('fixed-top');
+	}
+  // if (jhj<=jhj) {two.addClass('fixed-top collu');
+// }	
+})
