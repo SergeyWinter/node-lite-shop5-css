@@ -44,8 +44,13 @@ document.querySelector('#category-list').innerHTML = out;
 
 
 getCategoryList();
-
+// let scril=(document.body.scrollTop);
+// if (scril>120) {
+// alert('hjjkhfkjdhfjkdhfjk');	
+// }
+console.log(window.pageYOffset);
 let MyHeaderTop = $('.navbar').offset().top;
+// console.log(MyHeaderTop);
 $(window).scroll(function(){
 	let jhj = $(window).scrollTop();
   // console.log(jhj);
