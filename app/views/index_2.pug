@@ -1,13 +1,14 @@
 include head
 
-header(class='fixed-top')
+//header(class='fixed-top')
+header
   //include site_header
   include site_header3.pug
 section(class='sectionWone')
  img(src='images/cigarsFont.jpg')
-main
+main(class="text-white bg-dark")
   div(class='container ggg')
-    div(class='row')
+    div(class='row justify-content-center')
       //div(id="category-list")
       each val2, index2 in catR
         div(class="col-sm-12 col-md-12 col-lg-12")

@@ -44,3 +44,23 @@ document.querySelector('#category-list').innerHTML = out;
 
 
 getCategoryList();
+// let scril=(document.body.scrollTop);
+// if (scril>120) {
+// alert('hjjkhfkjdhfjkdhfjk');	
+// }
+console.log(window.pageYOffset);
+let MyHeaderTop = $('.navbar').offset().top;
+// console.log(MyHeaderTop);
+$(window).scroll(function(){
+	let jhj = $(window).scrollTop();
+  // console.log(jhj);
+  // console.log(MyHeaderTop);
+	let two = $('.navbar');
+	if (jhj>=MyHeaderTop) {
+		two.addClass('fixed-top');
+	}else{
+		two.removeClass('fixed-top');
+	}
+  // if (jhj<=jhj) {two.addClass('fixed-top collu');
+// }	
+})
