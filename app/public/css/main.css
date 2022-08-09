@@ -18,7 +18,9 @@ list-style-type: none;
 .card-footer{
 	padding-top: 0.1rem;
 }
-
+.d-flex{
+	margin-right: 10px;
+}
 .bg-dark {
     background-color: #212529 !important;
 }
@@ -41,7 +43,7 @@ list-style-type: none;
 }
 @media(min-width: 767px){
 .btn{
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 }	
 }
 @media (max-width: 1000px) {
@@ -94,7 +96,7 @@ ul.category-list{
 	display: inline-block;
 }
 .btn-primary{
-	margin-right: 15px;
+	margin-right: 10px;
 }
 /*regist.pug*/
 .my_pwd{
