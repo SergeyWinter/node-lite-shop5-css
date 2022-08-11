@@ -5,6 +5,4 @@ div(class='card col-12 col-md-4 col-sm-4 mb-grid-gutter')
   h5(class='card-title') #{val['name']}
   p(class='card-text') #{val['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} uah
  div(class='card-footer')
-  ul(class='card-actions')
-  li
   button(data-goods_id=val['id'] type="button" class='btn btn-success add-to-card') КУПИТЬ
