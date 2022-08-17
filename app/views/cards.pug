@@ -1,0 +1,8 @@
+div(class='col-md-4 col-sm-6 mb-grid-gutter')
+ a(class="card" href="goods/"+val['slug'])
+  img(class="card-img-top" src='images/'+val['image'])
+ div(class="card-body py-4 text-center")
+  h5(class='h5 mt-1') #{val['name']}
+  p(class='card-text') #{val['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} uah
+ div(class='card-footer text-center')
+  button(data-goods_id=val['id'] type="button" class='btn btn-success add-to-card') КУПИТЬ
