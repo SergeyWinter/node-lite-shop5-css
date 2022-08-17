@@ -1,0 +1,10 @@
+div(class='row')
+ div(class='col')
+  div(class='card')
+   a(href="goods/"+val['slug'])
+    img(class="card-img-top" src='images/'+val['image'])
+   div(class="card-body")
+    h5(class='card-title') #{val['name']}
+    p(class='card-text') #{val['cost'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')} uah
+   div(class='card-footer')
+    button(data-goods_id=val['id'] type="button" class='btn btn-success add-to-card') КУПИТЬ
