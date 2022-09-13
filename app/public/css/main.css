@@ -3,7 +3,10 @@ header{
     border: 3px solid red;
     max-height: 100%;
 }
-/*================для img Рюмка===========*/
+.border-4{
+	border-radius: 12px!important;
+}
+/*================для img Рюмка===========+*/
 section.sectionWone{
 background-color: #000000;  
 }
@@ -11,13 +14,15 @@ background-color: #000000;
   /*opacity: 0.5;*/
   background-color: #000000;
 }
-.col-md-4{
-	background-color: #8D9195;
-}
+
 li{
 list-style-type: none;
 }
-
+.card{
+	/*margin: 0 1px 0 1px;*/
+	/*box-shadow: inset  2.5px 2.5px 2.5px 2.5px rgba(0,0,0,.75);*/
+	padding:2.5px 2.5px 2.5px 2.5px; 
+}
 .card-footer{
 	padding-top: 0.1rem;
 }
@@ -29,7 +34,6 @@ list-style-type: none;
 }
 .ggg{
 	padding-top: 5%;
-	background-color: #D0FF00;
 }
 .navbar{
 	padding-bottom: 0;
